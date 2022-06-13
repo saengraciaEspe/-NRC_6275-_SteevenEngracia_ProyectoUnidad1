@@ -1,3 +1,6 @@
+from tokenize import Double
+
+
 class ventilador:
     """
     Clase que representa un ventilador inteligente.
@@ -20,8 +23,8 @@ class ventilador:
         """
         self.aencendido=encendido
 
-    def menen(self):
-        """Detallal los parámetros de encendido al encender el ventilador
+    def detallaren(self):
+        """Detalla los parámetros de encendido al encender el ventilador
 
             Parámetros
             ----------
@@ -30,7 +33,21 @@ class ventilador:
         """
         if not self.aencendido:
             print("Encendiendo ventilador...")
-            print("Preparando motores")
+            print("Preparando motores...")
+            print("Revisando sensores...")
             print("Se ha encendido sin ningún problema el ventilador")
         else:
             print("El ventilador ya está encendido")
+
+    def detectartemp(self):
+        """
+        Revisa en el entorno si la temperatura ambiente excede la medidad
+        tolerante 
+        >27 C
+        """
+        entrada=Double(input("Extrayendo temperatura del ambiente..."))
+        print("Procesando datos...")
+
+        if entrada>=27:
+        
+
