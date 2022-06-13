@@ -10,3 +10,12 @@ class ventilador:
     
     
     """
+    def __init__(self,encendido=False):
+        """Constructor usado para inicializar el ventilador
+
+        Parámetros
+        ----------
+            encendido : boolean.
+                        Indica si el ventilador se encuentra conectado.
+        """
+        self.aencendido=encendido
